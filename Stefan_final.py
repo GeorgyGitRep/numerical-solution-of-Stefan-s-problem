@@ -29,21 +29,21 @@ def bisection_method(f, a, b, tol=1e-10, max_iter=100):
     return c, iterations
 
 
-N = 12
+N = 100
 Tstart = ([-0.8]*N)
 Tstart[0] = Tleft
 Tstart[-1] = Tright
-H = ([0.2]*(N-2))
+H = ([0.02]*(N-2))
     
 #Tstart = [Tleft,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,Tright]
 #H = [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,] #0.02
 print(sum(H))
 lh = len(H)
-tau = 10 #0.05
+tau = 20 #0.05
 Tend = 3600
 TN = int(Tend/tau)
 h = 0.2
-lamda =    1.2328042328042328e-06#  2.6*10e-6 #1.81976456306803*10e-6
+lamda =   1.2328042328042328e-06#  2.6*10e-6 #1.81976456306803*10e-6
 
 
 T = Tstart.copy()
