@@ -105,11 +105,11 @@ for i in range(len(H)):
     sums = sums + H[i]
     print(sums)
     X.append(sums)
-plt(X,T[0:-1])
+#plt(X,T[0:-1])
 print(len(X))
 sums = [0]
 for i in newLenght:
     sums.append(sums[-1]+ i)
 Time = np.linspace(0, Tend,TN)
 print(sums[-1])
-#plt(Time,sums[:-1],label=f't = {Tend} с')
+plt(Time,sums[:-1],label=f't = {Tend} с')
